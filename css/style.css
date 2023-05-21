@@ -1,0 +1,261 @@
+:root{
+	--azul1: #2C3333;
+	--azul2: #2E4F4F;
+	--azul3: #0E8388;
+	--azul4: #CBE4DE;
+    --blanco: #e8e8e8;
+    --negro: #212121;
+	--fuente: 'Trebuchet MS';
+}
+
+body{
+    background: var(--azul1);
+    font-family: var(--fuente);
+    font-size: 16px;
+}
+
+.contHeader{
+    position: relative;
+}
+
+.contEncabezado{
+    position: absolute;
+    display: inline;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contHeader, .contMain{
+    width:  80vw;
+    margin-inline: auto;
+    margin-top: 5vh;
+}
+
+.contMain{
+    display: block;
+    height: 65vh;
+}
+
+.contSubMain{
+    width:  100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.advertencia{
+    color: var(--azul4);
+    margin: 20px 0;
+    vertical-align: middle;
+}
+
+.botones{
+    width: 94%;
+    text-align: center;
+}
+
+.btnEncriptar{
+    margin: 0 0 0 5%;
+}
+
+.btnEncriptar{
+    margin: 0 5% 0 0;
+}
+
+.btnGeneral{
+    /* width: 40%; */
+    padding: 10px 25px;
+    border: unset;
+    border-radius: 40px;
+    color: var(--negro);
+    z-index: 1;
+    background: var(--blanco);
+    position: relative;
+    font-weight: 1000;
+    font-size: 14px;
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.6);
+    transition: all 250ms;
+    overflow: hidden;
+}
+   
+.btnGeneral::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 40px;
+    background-color: var(--azul2);
+    z-index: -1;
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.6);
+    transition: all 250ms
+}
+   
+.btnGeneral:hover {
+    color: var(--blanco);
+}
+   
+.btnGeneral:hover::before {
+    width: 100%;
+}
+
+
+.contDer{
+    text-align: right;
+}
+
+.txtArea, .txtSalida{
+    font-size: 14px;
+    font-family: var(--fuente);
+    background: white;
+    width: 94%;
+    padding: 3% 3%;
+    border-width: 0;
+    border-radius: 20px;
+    resize: none;
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.8);
+}
+
+.txtSalida{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contTmp{
+    text-align: center;
+}
+
+.imgLogo{
+    width: 0px;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.btnCopiar{
+    width: 0%;
+    background: none;
+    border: none;
+    text-align: left;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+.btnCopiar:hover{
+    transform: scale(1.2);
+}
+
+.contCopiar{
+    text-align: right;
+}
+
+.imgCopiar{
+    width: 100%;
+    
+}
+
+div.contTmp:last-child {
+    display: grid;
+    align-content: space-between;
+  }
+
+@media(max-width: 767px){
+    .contHeader{
+        height: 8vh;
+    }
+    
+    .imgEncabezado2{
+        width: 30%;    
+    }
+    
+    .contSubMain{
+        height: 60%;
+        margin: 0 auto;
+    }
+    
+    .btnGeneral{
+        width: 75%;
+        margin: 0;
+    }
+    
+    .btnEncriptar{
+        margin: 0 0 5% 0;
+    }
+
+    .botones{
+        display: block;
+    }
+    
+    .contDer{
+        margin-top: 25%; 
+    }
+
+    .txtArea, .txtSalida{
+        height: 60%;
+    }
+    
+}
+
+@media(min-width: 768px) and (max-width: 1023px){
+    .contHeader{
+        height: 12vh;
+    }
+
+    .imgEncabezado{
+        width: 10%;    
+    }
+
+    .imgEncabezado2{
+        width: 25%;    
+    }
+
+    .contSubMain{
+        height: 60%;
+        margin: 0 auto;    
+    }
+
+    .txtArea, .txtSalida{
+        height: 60%;
+    }
+
+    .contTmp{
+        width: 100%;
+    }
+}
+
+@media(min-width: 1024px){
+    .imgEncabezado2{
+        width: 0;    
+    }
+
+    .contMain{
+        display: flex;
+    }
+    
+    .contSubMain{
+        width:  50%;
+        height: 100%;
+        margin: 0 auto;    
+    }
+
+    .txtArea, .txtSalida{
+        width: 90%;
+        height: 70%;
+    }
+
+    .imgLogo{
+        width: 30%;
+    }
+}
+
+
+
+
+
+
