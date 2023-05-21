@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador - desencriptador</title>
+</head>
+
+<body>
+    <header>
+        <div class=contHeader>
+            <img class="imgEncabezado" src="img/Logo_Alura.png" alt="Logo de Alura">
+            <div class="contEncabezado">
+                <img class="imgEncabezado2" src="img/Logo.png" alt="Logo">    
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <div class="contMain">
+            <!-- Area izquierda (Entrada de texto) -->
+            <div class="contSubMain">
+                <!-- Area de texto de entrada -->
+                <textarea class="txtEntrada txtArea" id="txtEntrada" name="entrada" placeholder="Escribe aquí el texto..."></textarea>
+            
+                <!-- Label de advertencia -->
+                <div class="advertencia">
+                        <img class="imgIcono" src="img/icono_adver.png" alt="Icono de advertencia">
+                        <label class="txtAdvert">Solo letras minúsculas y sin acentos</label>
+                </div>
+                
+                <!-- Botones de encriptar y desencriptar -->
+                <div class="botones">
+                    <button class="btnGeneral btnEncriptar" id="btnEncriptar" onclick="encriptar();"><span>Encriptar</span></button>
+                    <button class="btnGeneral btnDesencriptar" id="btnDesencriptar" onclick="desencriptar();"><span>Desencriptar</span></button>
+                </div>
+            </div>
+    
+            <!-- Area derecha (Salida de texto) -->
+            <div class="contSubMain contDer" id="contDer">
+                <div class="txtSalida" id="txtSalida">
+                    <div class="contTmp">
+                        <!-- Area donde se pone el texto de salida -->
+                        <div class="textAreaSalida contAlinear" id="txtAreaSalida">
+                            <img class="imgLogo" src="img/Logo.png" alt="Logo">
+                            <h1>Ningún mensaje fue encontrado</h1>
+                            <br>
+                            <p>Ingresa el texto que desees encriptar o desencriptar</p>
+                        </div>
+
+                        <!-- Boton de Copiar -->   
+                        <div class="contCopiar contAlinear">
+                           <button class="btnCopiar" id="btnCopiar" onclick="copiar();"><img class="imgCopiar" src="img/Icono_Copiar.png" alt="Copiar"></button> 
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+    </main>
+</body>
+
+
+
+</html
