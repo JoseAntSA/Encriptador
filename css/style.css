@@ -28,7 +28,7 @@ body{
     text-align: center;
 }
 
-.contHeader, .contMain{
+.contHeader, .contMain, footer{
     width:  80vw;
     margin-inline: auto;
     margin-top: 5vh;
@@ -65,7 +65,7 @@ body{
 }
 
 .btnGeneral{
-    /* width: 40%; */
+    width: 40%;
     padding: 10px 25px;
     border: unset;
     border-radius: 40px;
@@ -78,6 +78,7 @@ body{
     box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.6);
     transition: all 250ms;
     overflow: hidden;
+    cursor: pointer;
 }
    
 .btnGeneral::before {
@@ -163,7 +164,45 @@ h1{
 div.contTmp:last-child {
     display: grid;
     align-content: space-between;
-  }
+}
+
+footer{
+    text-align: center;
+    padding: 40px;
+}
+
+.social-links {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+  
+.social-links a {
+    width: 40px;
+    height: 40px;
+    margin: 0 2%;
+    cursor: pointer;
+}
+
+.icono{
+    width: 100%;
+    
+} 
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    width: 20%;
+    border-top: 4px solid rgb(255, 255, 255);
+}
+
+.copyright{
+    color: white;
+    font-size: 13px;
+    margin: 20px;
+}
+
 
 @media(max-width: 767px){
     .contHeader{
